@@ -70,19 +70,40 @@ $(document).ready(function(){
         $(".html h1").html("<h3>New HTML</h3>");
     });
 
-    
-    $("form").submit(function(){
-        var y = $("#entrytext").attr("value", "");
-        console.log(y);
-        $(".attr h1").append(y);
-        return false;
+    $(".attr button").click(function(){
+        $(".attr #entrytext").attr("value","Grant");
     });
+
+    // $("form").submit(function(){
+    //     var y = $(this).attr('input[name="username"]');
+    //     console.log(y);
+    //     // $(".attr h1").append($("#entrytext").attr());
+    //     return false;
+    // });
 
     // $(".attr #button2").click(function(){
     //     $(".attr #entrytext").attr("value","Grant");
     // })
 
     // $("input").submit(function())
+
+    $(".val input").keyup(function(){
+        var x = $(this).val();
+        $(".val h1").append(x);
+        });
+
+    $(".text button").click(function(){
+        $(".text h1").text("New Title");
+    });
+
+    $(".data").data("wages",{ Tom: 100, Joe: 200});
+    $(".data button").click(function(){
+        $("span:first").text($(".data").data("wages").Tom);
+        $("span:last").text($(".data").data("wages").Joe);
+    });
+
+
+
 
 
 
