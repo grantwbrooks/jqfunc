@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+div{
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+ul{
+    margin-left: 20px;
+}
+
+ul li ul li, .fadein img{
+    display: none;
+}
+
+.blueback{
+    background: blue;
+}
